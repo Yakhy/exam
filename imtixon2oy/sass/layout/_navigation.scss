@@ -1,0 +1,23 @@
+.header{
+  
+  z-index: 9999;
+  &-menu{
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+  &-navigation ul{
+    display: flex;
+    gap: 32px;
+    
+    a{
+      font-size: $main-font;
+      line-height: $main-height;
+      color: $dim-grey;
+      transition: all 0.5s;
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+}

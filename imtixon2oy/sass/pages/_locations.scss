@@ -1,0 +1,98 @@
+.map{
+
+
+  &-cities{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+  }
+  &-box{
+    background: rgba(252, 183, 43, 0.15);
+    padding: 22px 100px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: $dark-navy;
+    margin: 20px 0;
+  }
+  &-img{
+    padding: 100px 0;
+    
+  }
+  &-pic{
+    
+      max-width: 1045px;
+    
+  }
+  &-content{
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: $dark-navy;
+    }
+    p{
+      color: $dim-grey;
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      max-width: 445px;
+    }
+  }
+  &-mapr{
+   display: none;
+  }
+}
+
+@media(max-width: 1000px){
+  .map-content{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+
+    h2 br{
+      display: none;
+    }
+  }
+  .map-pic{
+    max-width: 800px; 
+}
+}
+@media(max-width: 800px){
+
+  .map-pic{
+    max-width: 600px; 
+}
+}
+
+@media(max-width: 600px){
+  .map-pic{
+    max-width: 500px; 
+}
+}
+@media(max-width: 500px){
+
+  .map-pic{
+    display: none;
+}
+.map-mapr{
+  display: block;
+  justify-content: center;
+ }
+ .map-cities{
+  display: block;
+  margin-bottom: 50px;
+ }
+ .map-img{
+  padding: 50px 0;
+ }
+}

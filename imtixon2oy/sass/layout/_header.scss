@@ -1,0 +1,35 @@
+.header{
+  padding: 22px;
+  background: $white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  &-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  &-btn{
+    padding: 14px 39px;
+  }
+
+ &-burger{
+  display: none;
+ }
+}
+@media(max-width: 700px){
+  .header-burger{
+    display: block;
+  }
+  .header-navigation{
+    display: none;
+  }
+  .header-btn{
+    display: none;
+  }
+  .header-wrapper {
+    justify-content: space-between;
+   }
+}

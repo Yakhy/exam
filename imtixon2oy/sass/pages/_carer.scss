@@ -1,0 +1,140 @@
+.carer{
+  background-image: url(../../images/oval-right.svg);
+  background-repeat: no-repeat;
+  background-position: top right ;
+
+  background-color: $white;
+  margin-top: 140px;
+  padding-bottom: 150px;
+  position: relative;
+
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+  &-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    h2{
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: $dark-navy;
+      padding-bottom: 24px;
+    }
+    p{
+      color: $dim-grey;
+      padding-bottom: 40px;
+      max-width: 445px;
+    }
+    img{
+      border-radius: 50%;
+     
+    }
+  
+    &:nth-child(1)::before{
+      content: url(../../images/easyafter.png);
+      position: absolute;
+      right: 0%;
+      bottom: 35%;
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .carer-box:nth-child(1){
+    flex-direction: column-reverse;
+  }
+
+
+  .carer-box:nth-child(1)::before {
+    content: url(../../images/easyafter.png);
+    position: absolute;
+    right: -23%;
+    bottom: 65%;
+}
+  .carer-box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+
+}
+
+ @media(max-width: 500px){
+  .carer{
+    background: none;
+  }
+  .carer-box:nth-child(1)::before{
+    display: none;
+   } 
+  
+  .carer-box img{
+     max-width: 300px;
+   }
+
+ }
+
+
+ .general{
+  &-wrapper{
+    display: flex;
+   
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 160px;
+  }
+  &-box{
+    background: $snow;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    h3{
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07143px;
+      color: $dark-navy;
+      padding-bottom: 8px;
+    }
+    span{
+      font-family: 'Lexend Deca';
+      font-style: normal;
+      font-weight: 400;
+      color: $dark-navy;
+    }
+  }
+
+  &-btn{
+    padding: 14px 60px;
+    background: $yellow;
+    border: 1px solid $yellow;
+    text-align: center;
+    color: $white;
+    font-size: $main-font;
+    line-height: $main-height;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    &:hover{
+      color: $yellow;
+      border: 1px solid $yellow;
+      background: inherit;
+    }
+  }
+ }
+
+ @media(max-width: 650px){
+  .general-box{
+    flex-direction: column;
+    gap: 20px;
+  }
+ }
